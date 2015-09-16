@@ -5,3 +5,9 @@
 .socials__item:hover:before {
 	content: ' ';
 }
+
+.product__inner,
+.header__inner,
+.content {
+	width: 990px;
+}
