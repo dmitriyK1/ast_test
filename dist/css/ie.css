@@ -31,4 +31,5 @@
 
 .gallery__item:hover .gallery__item-inner {
 	background: url(images/000000-0.45.png);
+	background-repeat: repeat;
 }
