@@ -2,12 +2,17 @@
 	width: 30%;
 }
 
-.socials__item:hover:before {
-	content: ' ';
+.checked {
+	border: 2px red solid;
 }
 
 .product__inner,
 .header__inner,
 .content {
 	width: 990px;
+}
+
+.owl-prev,
+.owl-next {
+	font-size: 0;
 }
