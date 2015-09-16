@@ -28,3 +28,7 @@
 .owl-next {
 	font-size: 0;
 }
+
+.gallery__item:hover .gallery__item-inner {
+	background-image: url(images/000000-0.45.png);
+}
