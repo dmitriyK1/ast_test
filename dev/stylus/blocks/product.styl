@@ -12,15 +12,20 @@
 			padding-top 25px
 			padding-bottom 25px
 			text-align center
-			background #fff
 			border 1px #E6E6E6 solid
 			height 100%
+			@media only screen and (min-width 768px) and (max-width 1024px)
+				width 63%
+				height 72%
 	&__form
-		background #fff
 		float right
 		height 100%
 		width 34%
 		display block
+		@media only screen and (min-width 768px) and (max-width 1024px)
+			height auto
+			width 37%
+			padding-right 20px
 		&-select
 			text-transform uppercase
 			font-size rem(15px)
@@ -36,15 +41,28 @@
 			transition background .3s
 			&:hover
 				background darken(#fff, 2)
+			@media only screen and (min-width 768px) and (max-width 1024px)
+				border 3px solid #464646
+				width 100%
+				padding-left 0
+				padding-right 0
+				padding-top 17px
+				padding-bottom 17px
+				margin-bottom 7px
+
 		&-price
 			display inline-block
 			font-size rem(42px)
 			font-weight 700
 			color #F3546A
+				@media only screen and (min-width 768px) and (max-width 1024px)
+					color #272727
 			&_old
 				margin-right 28px
 				color #C8C8C8
 				text-decoration line-through
+				@media only screen and (min-width 768px) and (max-width 1024px)
+					display none
 		&-status
 			margin-left 4px
 			&_instock
@@ -52,9 +70,13 @@
 		&-row
 			padding-left 30px
 			margin-bottom 25px
+			@media only screen and (min-width 768px) and (max-width 1024px)
+				margin-bottom 20px
 			&_qty
 			&_size
 				margin-bottom 12px
+				@media only screen and (min-width 768px) and (max-width 1024px)
+					margin-bottom 3px
 			&_availability
 				border-top 1px solid #E4E4E4
 				margin-bottom 4px
@@ -63,6 +85,10 @@
 				padding-top 15px
 				padding-left 0
 				text-transform uppercase
+				@media only screen and (min-width 768px) and (max-width 1024px)
+					padding-top 23px
+					.product__form-label
+						margin-bottom 0
 				.product__form-label
 					font-size rem(14px)
 		&-label
@@ -72,6 +98,11 @@
 			font-size rem(15px)
 			font-weight 700
 			padding-top 12px
+			@media only screen and (min-width 768px) and (max-width 1024px)
+				display block
+				padding-top 0
+				line-height 1
+				margin-bottom 10px
 	&__radio
 		display none
 		&-label
@@ -84,7 +115,7 @@
 			transition border .3s
 			&_white
 				border 2px solid #D2D2D2
-				background #FBFBFB 
+				background #FBFBFB
 				:checked + &
 					border 2px solid darken(#D2D2D2, 20)
 			&_blue

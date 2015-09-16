@@ -10,11 +10,17 @@ var App;
 
 module.exports = App = (function() {
   App.prototype.init = function() {
-    var $selects;
+    var $readmoreBtn, $selects;
     $selects = $('.jelect');
+    $readmoreBtn = $('.js-readmore');
     if ($selects.length) {
-      return $selects.jelect();
+      $selects.jelect();
     }
+    return $readmoreBtn.on('click', function() {
+      if ($readmoreBtn.length) {
+        return $('.readmore-inner').toggle();
+      }
+    });
   };
 
   function App() {
