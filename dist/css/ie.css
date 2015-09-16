@@ -1,0 +1,7 @@
+.gallery__item {
+	width: 30%;
+}
+
+.socials__item:hover:before {
+	content: ' ';
+}
