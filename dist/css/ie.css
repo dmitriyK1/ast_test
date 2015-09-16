@@ -29,3 +29,9 @@
 	font-size: 0;
 }
 
+.socials__item_fb:before:hover {
+    background-image: url("../images/sprite.png");
+    background-position: 0 -33px;
+    width: 33px;
+    height: 33px;
+}
