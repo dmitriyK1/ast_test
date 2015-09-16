@@ -1,0 +1,54 @@
+.socials
+	display block
+	float right
+	margin-top: -1px
+	width: 30.5%
+	border-top: 1px solid #e4e4e4
+	margin-right: 6px
+	text-align left
+	padding-top 25px
+
+	&__lbl
+		text-transform uppercase
+		font-size rem(14px)
+		color #4C4C4C
+		font-weight 700
+		margin-right 18px
+
+	&__item
+		position relative
+		display inline-block
+		margin-right 10px
+		vertical-align middle
+		&_fb
+			&:before
+				pseudo()
+				sprite('fb')
+				position relative
+			&:hover
+				&:before
+					sprite('fb_hover')
+		&_tw
+			&:before
+				pseudo()
+				sprite('tw')
+				position relative
+			&:hover
+				&:before
+					sprite('tw_hover')
+		&_gp
+			&:before
+				pseudo()
+				sprite('gp')
+				position relative
+			&:hover
+				&:before
+					sprite('gp_hover')
+		&_pin
+			&:before
+				pseudo()
+				sprite('pin')
+				position relative
+			&:hover
+				&:before
+					sprite('pin_hover')

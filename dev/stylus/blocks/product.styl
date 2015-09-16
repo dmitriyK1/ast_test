@@ -1,0 +1,102 @@
+.product
+	&__inner
+		inner(990px, $mainMinWidth, 0)
+		height 420px
+		cf()
+	&__img
+		max-width 100%
+		height 100%
+		&wrap
+			width 66%
+			float left
+			padding-top 25px
+			padding-bottom 25px
+			text-align center
+			background #fff
+			border 1px #E6E6E6 solid
+			height 100%
+	&__form
+		background #fff
+		float right
+		height 100%
+		width 34%
+		display block
+		&-select
+			text-transform uppercase
+			font-size rem(15px)
+		&-btn
+			color #454545
+			text-transform uppercase
+			background none
+			border 2px solid #464646
+			font-size rem(12px)
+			font-weight 700
+			padding 15px 72px
+			letter-spacing 1px
+			transition background .3s
+			&:hover
+				background darken(#fff, 2)
+		&-price
+			display inline-block
+			font-size rem(42px)
+			font-weight 700
+			color #F3546A
+			&_old
+				margin-right 28px
+				color #C8C8C8
+				text-decoration line-through
+		&-status
+			margin-left 4px
+			&_instock
+				color #F3546A
+		&-row
+			padding-left 30px
+			margin-bottom 25px
+			&_qty
+			&_size
+				margin-bottom 12px
+			&_availability
+				border-top 1px solid #E4E4E4
+				margin-bottom 4px
+				margin-left 30px
+				margin-right 5px
+				padding-top 15px
+				padding-left 0
+				text-transform uppercase
+				.product__form-label
+					font-size rem(14px)
+		&-label
+			display inline-block
+			min-width 79px
+			vertical-align top
+			font-size rem(15px)
+			font-weight 700
+			padding-top 12px
+	&__radio
+		display none
+		&-label
+			display inline-block
+			height 43px
+			width 43px
+			cursor pointer
+			margin-right 11px
+			border 2px solid transparent
+			transition border .3s
+			&_white
+				border 2px solid #D2D2D2
+				background #FBFBFB 
+				:checked + &
+					border 2px solid darken(#D2D2D2, 20)
+			&_blue
+				background #ADD4EB
+				:checked + &
+					border 2px solid darken(#ADD4EB, 20)
+			&_violet
+				background #BBAFD9
+				:checked + &
+					border 2px solid darken(#BBAFD9, 20)
+			&_pink
+				background #EBADC3
+				margin-right 0
+				:checked + &
+					border 2px solid darken(#EBADC3, 20)

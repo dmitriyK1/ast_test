@@ -1,0 +1,35 @@
+body,
+html
+	height 100%
+
+body
+	font-family $open
+	line-height 1.2
+
+.clearfix
+	clearfix()
+
+.align
+	&-center
+		text-align center
+
+	&-right
+		text-align right
+
+	&-left
+		text-align right
+
+.mainwrap
+	min-height 100%
+	margin-bottom - $footerHeight
+
+	&:after
+		content ''
+		display block
+		height $footerHeight
+
+.btnwrap
+	text-align center
+
+.grid
+	clear both

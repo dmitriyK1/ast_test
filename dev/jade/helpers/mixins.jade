@@ -1,0 +1,107 @@
+mixin script(scripts)
+	each src in scripts
+		script(src=src)
+
+mixin product
+	section.product
+		.product__inner
+			.product__imgwrap
+				img.product__img(src="images/product.jpg" alt="")
+			form.product__form
+				.product__form-row
+					label.product__form-label Color
+					input(type="radio" name="product[color]" value="white" checked).product__radio#color-white
+					label.product__radio-label.product__radio-label_white(for="color-white")
+					input(type="radio" name="product[color]" value="blue").product__radio#color-blue
+					label.product__radio-label.product__radio-label_blue(for="color-blue")
+					input(type="radio" name="product[color]" value="violet").product__radio#color-violet
+					label.product__radio-label.product__radio-label_violet(for="color-violet")
+					input(type="radio" name="product[color]" value="pink").product__radio#color-pink
+					label.product__radio-label.product__radio-label_pink(for="color-pink")
+				.product__form-row.product__form-row_size
+					label.product__form-label Size
+					//- select.product__form-select
+					//- 	option.product__form-option Select one
+					//- 	option.product__form-option S
+					//- 	option.product__form-option M
+					//- 	option.product__form-option L
+					.product__form-select.jelect.js-jelect(role="combobox")
+						input.jelect-input.js-jelect-input(value="0" data-text="" type="text")
+						.jelect-current.js-jelect-current(tabindex="1" role="button") Select one
+						.jelect-options.js-jelect-options(role="list-box")
+							.jelect-scroller.js-jelect-scroller
+								.jelect-option.js-jelect-option.jelect-option_state_active(data-val="0" tabindex="1" role="option")
+									.jelect-option__value.js-jelect-option-value S
+								.jelect-option.js-jelect-option(data-val="1" tabindex="2" role="option")
+									.jelect-option__value.js-jelect-option-value M
+								.jelect-option.js-jelect-option(data-val="2" tabindex="3" role="option")
+									.jelect-option__value.js-jelect-option-value L
+							.jelect-track
+								.jelect-scrollbar.js-jelect-scrollbar
+				.product__form-row.product__form-row_qty
+					label.product__form-label Quantity
+					//- select.product__form-select
+					//- 	option.product__form-option Select one
+					//- 	option.product__form-option 1
+					//- 	option.product__form-option 2
+					//- 	option.product__form-option 3
+					.product__form-select.jelect.js-jelect(role="combobox")
+						input.jelect-input.js-jelect-input(value="0" data-text="" type="text")
+						.jelect-current.js-jelect-current(tabindex="1" role="button") 1
+						.jelect-options.js-jelect-options(role="list-box")
+							.jelect-scroller.js-jelect-scroller
+								.jelect-option.js-jelect-option.jelect-option_state_active(data-val="0" tabindex="1" role="option")
+									.jelect-option__value.js-jelect-option-value 1
+								.jelect-option.js-jelect-option(data-val="1" tabindex="2" role="option")
+									.jelect-option__value.js-jelect-option-value 2
+								.jelect-option.js-jelect-option(data-val="2" tabindex="3" role="option")
+									.jelect-option__value.js-jelect-option-value 3
+							.jelect-track
+								.jelect-scrollbar.js-jelect-scrollbar
+				.product__form-row.product__form-row_availability
+					label.product__form-label Availability:
+						span.product__form-status.product__form-status_instock In stock
+				.product__form-row
+					span.product__form-price.product__form-price_old $37.59
+					span.product__form-price $30.00
+				.product__form-row
+					button.product__form-btn add to cart
+
+mixin socials
+	section.socials
+		label.socials__lbl share:
+		a.socials__item.socials__item_fb(href=jv0)
+		a.socials__item.socials__item_tw(href=jv0)
+		a.socials__item.socials__item_gp(href=jv0)
+		a.socials__item.socials__item_pin(href=jv0)
+
+mixin description
+	section.description
+		h2.description__h2 Nautical print T-shirt
+		h3.description__h3 TH3863-00
+		p.description__p An anchor and marine flags accent the chest of this nautical-inspired Lacoste T-shirt. A comfortable piece perfect for urban adventures.
+		ul.description__list
+			li.description__list-item Regular fit
+			li.description__list-item Crew neck
+			li.description__list-item Lacoste Yachting branding on chest
+			li.description__list-item Other
+			li.description__list-item Round neck
+			li.description__list-item COTTON (100%)
+
+mixin gallery
+	ul.gallery
+		li.gallery__item
+			.gallery__item-inner
+				p.gallery__item-descr our iconic<br>blazer
+				button.gallery__item-btn read the story
+			img.gallery__img(src="images/photo.jpg" alt="")
+		li.gallery__item
+			.gallery__item-inner
+				p.gallery__item-descr our iconic<br>blazer
+				button.gallery__item-btn read the story
+			img.gallery__img(src="images/photo2.jpg" alt="")
+		li.gallery__item
+			.gallery__item-inner
+				p.gallery__item-descr our iconic<br>blazer
+				button.gallery__item-btn read the story
+			img.gallery__img(src="images/photo3.jpg" alt="")

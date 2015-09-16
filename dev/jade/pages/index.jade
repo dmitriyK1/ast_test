@@ -1,0 +1,12 @@
+extends ../layouts/default
+
+block head
+	- pageTitle = 'Template';
+	- pageDescription = '';
+	- pageKeywords = '';
+
+block scripts
+	+script(['js/main.js'])
+
+block content
+	include ../blocks/main
