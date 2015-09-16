@@ -8,7 +8,6 @@ icon()
 		display block
 		width 16px
 		height 16px
-		background-image url(../images/wand.png)
 		background-repeat no-repeat
 		content ''
 
@@ -35,6 +34,8 @@ icon()
 	box-sizing border-box
 	@media only screen and (min-width 768px) and (max-width 1024px)
 		width 100%
+	@media only screen and (max-width 767px)
+		float right
 
 	&_type_autocomplete
 		.jelect-current

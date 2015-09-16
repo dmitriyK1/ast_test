@@ -10,21 +10,17 @@ mixin product
 			form.product__form
 				.product__form-row
 					label.product__form-label Color
-					input(type="radio" name="product[color]" value="white" checked).product__radio#color-white
-					label.product__radio-label.product__radio-label_white(for="color-white")
-					input(type="radio" name="product[color]" value="blue").product__radio#color-blue
-					label.product__radio-label.product__radio-label_blue(for="color-blue")
-					input(type="radio" name="product[color]" value="violet").product__radio#color-violet
-					label.product__radio-label.product__radio-label_violet(for="color-violet")
-					input(type="radio" name="product[color]" value="pink").product__radio#color-pink
-					label.product__radio-label.product__radio-label_pink(for="color-pink")
+					.product__form-radios
+						input(type="radio" name="product[color]" value="white" checked).product__radio#color-white
+						label.product__radio-label.product__radio-label_white(for="color-white")
+						input(type="radio" name="product[color]" value="blue").product__radio#color-blue
+						label.product__radio-label.product__radio-label_blue(for="color-blue")
+						input(type="radio" name="product[color]" value="violet").product__radio#color-violet
+						label.product__radio-label.product__radio-label_violet(for="color-violet")
+						input(type="radio" name="product[color]" value="pink").product__radio#color-pink
+						label.product__radio-label.product__radio-label_pink(for="color-pink")
 				.product__form-row.product__form-row_size
 					label.product__form-label Size
-					//- select.product__form-select
-					//- 	option.product__form-option Select one
-					//- 	option.product__form-option S
-					//- 	option.product__form-option M
-					//- 	option.product__form-option L
 					.product__form-select.jelect.js-jelect(role="combobox")
 						input.jelect-input.js-jelect-input(value="0" data-text="" type="text")
 						.jelect-current.js-jelect-current(tabindex="1" role="button") Select one
@@ -40,11 +36,6 @@ mixin product
 								.jelect-scrollbar.js-jelect-scrollbar
 				.product__form-row.product__form-row_qty
 					label.product__form-label Quantity
-					//- select.product__form-select
-					//- 	option.product__form-option Select one
-					//- 	option.product__form-option 1
-					//- 	option.product__form-option 2
-					//- 	option.product__form-option 3
 					.product__form-select.jelect.js-jelect(role="combobox")
 						input.jelect-input.js-jelect-input(value="0" data-text="" type="text")
 						.jelect-current.js-jelect-current(tabindex="1" role="button") 1

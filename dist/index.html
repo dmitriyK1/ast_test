@@ -25,14 +25,16 @@
 					<form class="product__form">
 						<div class="product__form-row">
 							<label class="product__form-label">Color</label>
-							<input type="radio" name="product[color]" value="white" checked="checked" id="color-white" class="product__radio" />
-							<label for="color-white" class="product__radio-label product__radio-label_white"></label>
-							<input type="radio" name="product[color]" value="blue" id="color-blue" class="product__radio" />
-							<label for="color-blue" class="product__radio-label product__radio-label_blue"></label>
-							<input type="radio" name="product[color]" value="violet" id="color-violet" class="product__radio" />
-							<label for="color-violet" class="product__radio-label product__radio-label_violet"></label>
-							<input type="radio" name="product[color]" value="pink" id="color-pink" class="product__radio" />
-							<label for="color-pink" class="product__radio-label product__radio-label_pink"></label>
+							<div class="product__form-radios">
+								<input type="radio" name="product[color]" value="white" checked="checked" id="color-white" class="product__radio" />
+								<label for="color-white" class="product__radio-label product__radio-label_white"></label>
+								<input type="radio" name="product[color]" value="blue" id="color-blue" class="product__radio" />
+								<label for="color-blue" class="product__radio-label product__radio-label_blue"></label>
+								<input type="radio" name="product[color]" value="violet" id="color-violet" class="product__radio" />
+								<label for="color-violet" class="product__radio-label product__radio-label_violet"></label>
+								<input type="radio" name="product[color]" value="pink" id="color-pink" class="product__radio" />
+								<label for="color-pink" class="product__radio-label product__radio-label_pink"></label>
+							</div>
 						</div>
 						<div class="product__form-row product__form-row_size">
 							<label class="product__form-label">Size</label>
@@ -138,6 +140,7 @@
 			</div>
 		</div>
 		<script src="js/main.js"></script>
+		<!--[if IE 8]><script src="js/checked-polyfill.min.js"></script><script src="js/ie.js"></script><![endif]-->
 	</body>
 
 </html>

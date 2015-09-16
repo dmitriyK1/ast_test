@@ -3,9 +3,16 @@
 		inner(990px, $mainMinWidth, 0)
 		height 420px
 		cf()
+		@media only screen and (max-width 767px)
+			height auto
+			width 90%
+			margin-left auto
+			margin-right auto
 	&__img
 		max-width 100%
 		height 100%
+		@media only screen and (max-width 767px)
+			height 170px
 		&wrap
 			width 66%
 			float left
@@ -17,6 +24,10 @@
 			@media only screen and (min-width 768px) and (max-width 1024px)
 				width 63%
 				height 72%
+			@media only screen and (max-width 767px)
+				float none
+				width 100%
+				margin-bottom 25px
 	&__form
 		float right
 		height 100%
@@ -26,6 +37,13 @@
 			height auto
 			width 37%
 			padding-right 20px
+		@media only screen and (max-width 767px)
+			float none
+			width 100%
+		&-radios
+			display inline-block
+			@media only screen and (max-width 767px)
+				float right
 		&-select
 			text-transform uppercase
 			font-size rem(15px)
@@ -49,19 +67,26 @@
 				padding-top 17px
 				padding-bottom 17px
 				margin-bottom 7px
+			@media only screen and (max-width 767px)
+				width 100%
+				border 3px solid #464646
+				margin-top -20px
+				font-size rem(14px)
 
 		&-price
 			display inline-block
 			font-size rem(42px)
 			font-weight 700
 			color #F3546A
-				@media only screen and (min-width 768px) and (max-width 1024px)
-					color #272727
+			@media only screen and (min-width 768px) and (max-width 1024px), only screen and (max-width 767px)
+				color #272727
+			@media only screen and (max-width 767px)
+				font-size rem(36px)
 			&_old
 				margin-right 28px
 				color #C8C8C8
 				text-decoration line-through
-				@media only screen and (min-width 768px) and (max-width 1024px)
+				@media only screen and (min-width 768px) and (max-width 1024px), only screen and (max-width 767px)
 					display none
 		&-status
 			margin-left 4px
@@ -72,11 +97,17 @@
 			margin-bottom 25px
 			@media only screen and (min-width 768px) and (max-width 1024px)
 				margin-bottom 20px
+			@media only screen and (max-width 767px)
+				padding-left 0
+				clear both
+				margin-bottom 37px
 			&_qty
 			&_size
 				margin-bottom 12px
 				@media only screen and (min-width 768px) and (max-width 1024px)
 					margin-bottom 3px
+				@media only screen and (max-width 767px)
+					margin-bottom 37px
 			&_availability
 				border-top 1px solid #E4E4E4
 				margin-bottom 4px
@@ -85,6 +116,9 @@
 				padding-top 15px
 				padding-left 0
 				text-transform uppercase
+				@media only screen and (max-width 767px)
+					margin-left 0
+					padding-top 10px
 				@media only screen and (min-width 768px) and (max-width 1024px)
 					padding-top 23px
 					.product__form-label
@@ -113,21 +147,27 @@
 			margin-right 11px
 			border 2px solid transparent
 			transition border .3s
+			@media only screen and (max-width 767px)
+				margin-right 3px
 			&_white
 				border 2px solid #D2D2D2
 				background #FBFBFB
+				&.checked
 				:checked + &
 					border 2px solid darken(#D2D2D2, 20)
 			&_blue
 				background #ADD4EB
+				&.checked
 				:checked + &
 					border 2px solid darken(#ADD4EB, 20)
 			&_violet
 				background #BBAFD9
+				&.checked
 				:checked + &
 					border 2px solid darken(#BBAFD9, 20)
 			&_pink
 				background #EBADC3
 				margin-right 0
+				&.checked
 				:checked + &
 					border 2px solid darken(#EBADC3, 20)
